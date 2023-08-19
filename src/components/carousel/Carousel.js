@@ -3,7 +3,7 @@ import {
   BsFillArrowLeftCircleFill,
   BsFillArrowRightCircleFill,
 } from "react-icons/bs";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import dayjs from "dayjs";
 
@@ -54,7 +54,7 @@ const Carousel = ({ data, loading, endPoint, title }) => {
           onClick={() => navigation("left")}
         />
         <BsFillArrowRightCircleFill
-          className="carouselRighttNav arrow"
+          className="carouselRightNav arrow"
           onClick={() => navigation("right")}
         />
         {!loading ? (
