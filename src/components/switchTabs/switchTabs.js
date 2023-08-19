@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./switchTabs.scss";
+import "./SwitchTabs.scss";
 
 const SwitchTabs = ({ data, onTabChange }) => {
   const [selectedTab, setSelectedTab] = useState(0);
@@ -26,7 +26,7 @@ const SwitchTabs = ({ data, onTabChange }) => {
             {tab}
           </span>
         ))}
-        <span className="movingBg" style={{ left: left }} />
+        <span className="movingBg" style={{ left }} />
       </div>
     </div>
   );
